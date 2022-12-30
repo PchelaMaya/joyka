@@ -1,0 +1,119 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --secondary: #2783FE;
+    --secondary-font: 'Ubuntu', sans-serif;
+}
+body {
+    font-family: var(--secondary-font);
+    background-color: #fff;
+}
+.none {
+    display: none !important;
+}
+a {
+    text-decoration: none;
+}
+
+.header {
+    max-width: 1920px;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    min-height: 940px;
+
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1220px;
+    margin: auto;
+    padding: 0;
+
+}
+
+.nav__logo {
+    height: 48px;
+    background-size: 100%;
+}
+.nav__list {
+    display: flex;
+    column-gap: 37px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__list a {
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+.selected-lang {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.lang-menu {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+.dropdown-lang {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    column-gap: 5px;
+}
+.dropdown-lang a {
+font-family: var(--secondary-font);
+
+font-weight: 700;
+font-size: 18px;
+color: var(--secondary);
+}
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+}
+.lang-menu ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.lang-menu ul li a {
+    width: 70px;
+    display: block;
+    /* padding: 5px 10px; */
+}
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    height: 32px;
+    margin: 0px;
+    vertical-align: middle;
+
+}
+.lang-menu ul li a:hover {
+    background-color: #f2f2f2;
+}
+.lang-menu:hover ul{
+    display: block;
+}
+.dropdown-arrow {
+    text-align: center;
+}
