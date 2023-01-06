@@ -5,10 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width+++++, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
     <title>JoyKa</title>
 </head>
 <body>
-    <header class="header none">
+    <header class="header">
             <div class="header__inner w-inner">
                     <div class="nav__logo">
                         <img src="./img/header/Logo.png" alt="Image">
@@ -37,7 +45,7 @@
 
     </header>
     <main>
-        <section class="main none">
+        <section class="main">
             <div class="container__main w-main">
                 <div class="main__about">
                     <h1 class="main__title">JoyKa — эмоции в конверте 
@@ -66,33 +74,39 @@
         <section class="working">
             <h1 class="working__title">Как это работает?</h1>
             <div class="container__working w-working">
-                <div class="point_works selfi">
-                    <img src="./img/working/selphi.png" alt="Image">
-                    <div class="works__text">
-                    <h2>Человек <br> делает селфи</h1>
-                    <p>Вы делаете селфи<br>
-                        или выбираете удачное фото<br>
-                        из галереи JoyKa</p>
+                <div class="point_works">
+                    <div class="selfi">
+                        <img src="./img/working/selphi.png" alt="Image">
+                    </div>
+                    <div class="works__text works__text--selfi">
+                        <h2>Человек <br> делает селфи</h1>
+                        <p>Вы делаете селфи<br>
+                            или выбираете удачное фото<br>
+                            из галереи JoyKa</p>
                     </div>
                 </div>
                 <div class="point_works injoy">
-                    <img src="./img/working/injoy.png" alt="Image">
-                    <div class="works__text">
-                    <h2>Конверт JoyKa<br>
-                        с ярким фото</h1>
-                    <p>Оставляете заявку на сайте
-                        или в приложении. Две минуты —<br>
-                        и JoyKa готова!</p>
+                    <div class="injoy">
+                        <img src="./img/working/injoy.png" alt="Image">
+                    </div>
+                    <div class="works__text works__text--injoy">
+                        <h2>Конверт JoyKa<br>
+                            с ярким фото</h2>
+                        <p>Оставляете заявку на сайте
+                            или в приложении. Две минуты —<br>
+                            и JoyKa готова!</p>
                     </div>
                 </div>
                 <div class="point_works courier">
-                    <img src="./img/working/courier.png" alt="Image">
-                    <div class="works__text">
-                    <h2>Курьер<br>
-                        несёт JoyKa</h1>
-                    <p>Распечатанную фотографию
-                        в красивом конверте курьер 
-                        доставит лично в руки адресату</p>
+                    <div class="courier">
+                        <img src="./img/working/courier.png" alt="Image">
+                    </div>
+                    <div class="works__text works__text--courier">
+                        <h2>Курьер<br>
+                            несёт JoyKa</h2>
+                        <p>Распечатанную фотографию
+                            в красивом конверте курьер 
+                            доставит лично в руки адресату</p>
                     </div>
                 </div>
 
@@ -100,18 +114,88 @@
                 <div class="receiving">
                     <img src="./img/working/receiving.png" alt="Image">
                     <div class="receiving__content">
-                    <h2>Адресат радуется полученной JoyKa</h1>
-                    <p>Ваше фото с личным посланием подарят<br> 
-                        близким хорошее настроение на весь день</p>
-                    <a href="#!" class="btn">Отправить Джойку
-                        <img class="btn--img" src="./img/icon/icon_mail.svg" alt="image">
-                    </a>
+                        <h2>Адресат радуется полученной JoyKa</h1>
+                        <p>Ваше фото с личным посланием подарят<br> 
+                            близким хорошее настроение на весь день</p>
+                        <a href="#!" class="btn">Отправить Джойку
+                            <img class="btn--img" src="./img/icon/icon_mail.svg" alt="image">
+                        </a>
                     </div>
                 
             </div>
 
         </section>
+        <section class="send">
+            <div class="container__send w-send">
+                <div class="send__content">
+                <h1 class="send__title">Поводы<br>для отправки</br></h1>
+                
+                    <div class="slider">
+                        <div class="owl-carousel">
+                            <div class="sliders slider-1">
+                                <img class="slider__item" src="./img/send/slider_1.jpg" alt="Slider item">
+                                <h1 class="slider__title-1">Удивить родных</h1>
+                                <p>Встретились со знаменитостью? Веселитесь 
+                                    на концерте любимой группы? Отдыхаете 
+                                    на экзотическом пляже? Такие фото обязательно 
+                                    должны быть <b>в семейном альбоме!</b></p>
+                            </div>
+                            <div class="sliders slider-2">
+                                <img class="slider__item" src="./img/send/slider_2.jpg" alt="Slider item">
+                                <h1 class="slider__title-2">Пригласить друзей на вечеринку</h1>
+                                <p>От приглашения, переданного <b>лично в руки</b>,
+                                     настрой хорошо повеселиться обеспечен</p>
+                            </div>
+                            <div class="sliders slider-3">
+                                <img class="slider__item" src="./img/send/slider_3.jpg" alt="Slider item">
+                                <h1 class="slider__title-3">Прислать привет из путешествия</h1>
+                                <p><b>В любой точке мира</b> — вы рядом со своими 
+                                    близкими.</p>
+                            </div>
+                            <div class="sliders slider-4">
+                                <img class="slider__item" src="./img/send/slider_4.jpg" alt="Slider item">
+                                <h1 class="slider__title-4">Подарить радость просто так!</h1>
+                                <p>Наша жизнь наполнена рутиной. Отправленная 
+                                    JoyKa с тёплыми словами подарит вашим близким 
+                                    <b>хорошее настроение и улыбку на весь день.</b></p>
+                            </div>
+                            <div class="sliders slider-5">
+                                <img class="slider__item" src="./img/send/slider_5.jpg" alt="Slider item">
+                                <h1 class="slider__title-5">Поделиться воспоминаниями</h1>
+                                <p>Фотография с фразой: <b>«Помнишь, как классно 
+                                    было?»</b> вызовет волну положительных эмоций 
+                                    и желание встретиться снова.</p>
+                            </div>
+
+                        </div>
+                        <div class="buttons">
+                            <button class="slider__btn slider__btn--left">
+                                <img src="./img/send/arrow-left.svg" alt="">
+                            </button>
+                            <button class="slider__btn slider__btn--right">
+                                <img src="./img/send/arrow-right.svg" alt="">
+                            </button>
+                            <p>Листайте дальше</p>
+                        </div>
+                    </div>
+
+
+                
+                </div>
+            </div>
+
+        </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer">
+    </script>
     <script src="./js/main.js"></script>
     
 </body>
