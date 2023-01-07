@@ -19,10 +19,13 @@ owl.owlCarousel({
 
 $('.slider__btn--left').click(function() {
 // При клике на кнопек будет вызываться trigger, карусель прокутит вперёд
-  owl.trigger('left.owl.carousel');
+  owl.trigger('buttons.left.owl.carousel');
+  console.log('left');
 })
 
 // Кнопка вперёд
 $('.slider__btn--right').click(function() {
-    owl.trigger('right.owl.carousel');
+    owl.trigger('buttons.right.owl.carousel');
+    console.log('right');
 })
+// new Swiper('.owl-carousel');
