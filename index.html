@@ -9,15 +9,20 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     /> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" 
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" 
     crossorigin="anonymous" 
     referrerpolicy="no-referrer" 
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" 
     crossorigin="anonymous" 
     referrerpolicy="no-referrer" 
-    />
+    /> -->
     <title>JoyKa</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -134,64 +139,66 @@
                 <div class="send__content">
                 <h1 class="send__title">Поводы<br>для отправки</br></h1>
                 
-                    <div class="slider">
-                        <div class="owl-carousel">
-                            <div class="sliders slider-1">
-                                    <img class="slider__item" src="./img/send/slider_1.jpg" alt="Slider item">
-                                <div class="sliders__text">
-                                    <h1 class="slider__title-1">Удивить родных</h1>
-                                    <p>Встретились со знаменитостью? Веселитесь 
-                                        на концерте любимой группы? Отдыхаете 
-                                        на экзотическом пляже? Такие фото обязательно 
-                                        должны быть <b>в семейном альбоме!</b></p>
-                                </div>
-                            </div>
-                            <div class="sliders slider-2">
+                    <div class="swiper slider">
+                        <div class="owl-carousel swiper-wrapper">
+
+                            <div class="swiper-slide slider-1">
                                 <img class="slider__item" src="./img/send/slider_2.jpg" alt="Slider item">
                                 <div class="sliders__text">
-                                <h1 class="slider__title-2">Пригласить друзей на вечеринку</h1>
+                                <h1 class="slider__title-1">Пригласить друзей на вечеринку</h1>
                                 <p>От приглашения, переданного <b>лично в руки</b>,
                                      настрой хорошо повеселиться обеспечен</p>
                                 </div>
                             </div>
-                            <div class="sliders slider-3">
+                            <div class="swiper-slide slider-2">
                                 <img class="slider__item" src="./img/send/slider_3.jpg" alt="Slider item">
                                 <div class="sliders__text">
-                                <h1 class="slider__title-3">Прислать привет из путешествия</h1>
+                                <h1 class="slider__title-2">Прислать привет из путешествия</h1>
                                 <p><b>В любой точке мира</b> — вы рядом со своими 
                                     близкими.</p>
                                 </div>
                             </div>
-                            <div class="sliders slider-4">
+                            <div class="swiper-slide slider-3">
                                 <img class="slider__item" src="./img/send/slider_4.jpg" alt="Slider item">
                                 <div class="sliders__text">
-                                <h1 class="slider__title-4">Подарить радость просто так!</h1>
+                                <h1 class="slider__title-3">Подарить радость просто так!</h1>
                                 <p>Наша жизнь наполнена рутиной. Отправленная 
                                     JoyKa с тёплыми словами подарит вашим близким 
                                     <b>хорошее настроение и улыбку на весь день.</b></p>
                                 </div>
                             </div>
-                            <div class="sliders slider-5">
+                            <div class="swiper-slide slider-4">
                                 <img class="slider__item" src="./img/send/slider_5.jpg" alt="Slider item">
                                 <div class="sliders__text">
-                                <h1 class="slider__title-5">Поделиться воспоминаниями</h1>
+                                <h1 class="slider__title-4">Поделиться воспоминаниями</h1>
                                 <p>Фотография с фразой: <b>«Помнишь, как классно 
                                     было?»</b> вызовет волну положительных эмоций 
                                     и желание встретиться снова.</p>
                                 </div>
                             </div>
-
+                            <div class="swiper-slide slider-5">
+                                <img class="slider__item" src="./img/send/slider_1.jpg" alt="Slider item">
+                            <div class="sliders__text">
+                                <h1 class="slider__title-5">Удивить родных</h1>
+                                <p>Встретились со знаменитостью? Веселитесь 
+                                    на концерте любимой группы? Отдыхаете 
+                                    на экзотическом пляже? Такие фото обязательно 
+                                    должны быть <b>в семейном альбоме!</b></p>
+                            </div>
+                        </div>
+                        </div>
+ 
                         </div>
                         <div class="buttons">
-                            <button class="slider__btn slider__btn--left">
-                                <img src="./img/send/arrow-left.svg" alt="">
-                            </button>
-                            <button class="slider__btn slider__btn--right">
-                                <img src="./img/send/arrow-right.svg" alt="">
-                            </button>
-                            <p>Листайте дальше</p>
+                        <button class="slider__btn slider__btn--left">
+                            <img src="./img/send/arrow-left.svg" alt="">
+                        </button>
+                        <button class="slider__btn slider__btn--right">
+                            <img src="./img/send/arrow-right.svg" alt="">
+                        </button>
+                        <p class="slider__text">Листайте дальше</p>
+                        <div class="swiper-pagination"></div>
                         </div>
-                    </div>
 
 
                 
@@ -200,7 +207,47 @@
 
         </section>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
+    <footer class="footer">
+        
+                <div class="footer-menu w-inner">
+                    <div class="footer-top">
+                        <div class="nav__logo--footer">
+                            <img src="./img/header/Logo.png" alt="Image">
+                            <p class="footer__text">Радовать людей - это наша работа</p>
+                        </div>
+                        <ul class="nav__list nav__list--footer">
+                            <li><a href="#!">Политика безопасности</a></li>
+                            <li><a href="#!">Контакты</a></li>
+                            <li><a href="#!">Партнерам</a></li>
+                        </ul>
+                        <div class="footer__pay">
+                            <a href="#" class="footer-pay__link">
+                                <img src="./img/footer/liqpay.svg" alt=""></a>
+                            <a href="#" class="footer-pay__link">
+                                <img src="./img/footer/visa.svg" alt=""></a>
+                            <a href="#" class="footer-pay__link">
+                                <img src="./img/footer/mastercard.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="footer-socials">
+                        <a href="#" class="footer-socials__link">
+                            <img src="./img/footer/instagram.svg" alt=""></a>
+                        <a href="#" class="footer-socials__link">
+                            <img src="./img/footer/facebook.svg" alt=""></a>
+                        <a href="#" class="footer-socials__link">
+                            <img src="./img/footer/telegram.svg" alt=""></a>
+                        <a href="#" class="footer-socials__link">
+                            <img src="./img/footer/youtube.svg" alt=""></a>
+                        </div>
+                        <a href="#" class="footer-copyright">Дизайн сайта - Алексей Киселев</a>
+                </div>
+                    
+                </div>
+            
+    
+    </footer>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
     integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
     crossorigin="anonymous" 
     referrerpolicy="no-referrer">
@@ -209,7 +256,7 @@
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" 
     crossorigin="anonymous" 
     referrerpolicy="no-referrer">
-    </script>
+    </script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
     <script src="./js/main.js"></script>
     
